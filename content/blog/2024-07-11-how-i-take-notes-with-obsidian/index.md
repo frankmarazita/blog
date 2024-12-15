@@ -48,7 +48,7 @@ My solution for syncing and backups is a combination of the following plugins an
 - [Obsidian Git](https://github.com/Vinzent03/obsidian-git)
 - [Tailscale](https://tailscale.com/)
 - [CouchDB](https://couchdb.apache.org/)
-- [docker-obsidian](https://github.com/rsmacapinlac/docker-obsidian?tab=readme-ov-file)
+- [docker-obsidian](https://github.com/linuxserver/docker-obsidian)
 
 I mostly use the Self-hosted LiveSync plugin to sync my notes between all my obsidian devices. I have a CouchDB instance running on a VPS which the plugin uses to sync the notes. All my devices and the VPS are connected via Tailscale which allows me to access the CouchDB instance from anywhere privately. As a backup solution, I use Obsidian Git to commit changes to the CouchDB instance.
 

@@ -66,13 +66,13 @@ There are currently two AI assistant plugins that I am experimenting with:
 
 - [BMO Chatbot](https://github.com/longy2k/obsidian-bmo-chatbot)
 
-  - I use this plugin to talk to the document that is currently open. I find it useful for brainstorming and getting ideas down quickly. Sometimes I find it useful to give me more ideas on a topic that I'm writing about.
+  - I use this plugin to talk to the document that is currently open. I find it useful for brainstorming and getting ideas down quickly. Sometimes I find it useful to give me more ideas on a topic that I'm writing about. I power it with a local Ollama model running on my machine.
 
-- [Copilot auto completion](https://github.com/j0rd1smit/obsidian-copilot-auto-completion)
+- [Github Copilot](https://github.com/Pierrad/obsidian-github-copilot)
 
-  - This extension is used more for inline AI completion. I haven't found it to be particularly useful yet but I'm still experimenting with it.
+  - This extension leverages the Github Copilot AI and adds autocomplete functionality to Obsidian. I find it useful for all sorts of things in my notes, not just code. I find it useful for writing out complex ideas and concepts.
 
-Tthese plugins are powered by local LLMs that I have running on my machine. I am currenlty powering them with Ollama as well as experimenting with a variety of different models. This allows me to keep my data private and not rely on a cloud service or a network connection.
+These plugins are powered by local LLMs that I have running on my machine. I am curenlty powering them with Ollama as well as experimenting with a variety of different models. This allows me to keep my data private and not rely on a cloud service or a network connection.
 
 **File Type Specific**
 

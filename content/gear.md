@@ -35,7 +35,11 @@
 
 ### Work
 
-- Dell XPS 15 9520 (i7-12700H, 64GB RAM, 512GB SSD)
+- Dell XPS 15 9520
+  - Fedora Linux (KDE Plasma)
+  - Intel i7-12700H
+  - 64GB RAM
+  - 512GB SSD
 - iPad Pro 11" (3rd generation)
 
 ### Other

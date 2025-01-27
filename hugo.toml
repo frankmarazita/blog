@@ -14,9 +14,10 @@ hideHeader = true
 
 homeIntroTitle = 'Hey!'
 homeIntroContent = """
-I’m Frank, a software engineer, and motivational thinker based in Melbourne, Australia. I hold a Bachelor's degree from [RMIT University](https://www.rmit.edu.au/) and currently work as a Software Engineer.
 
-Here, I write about software development, productivity, and personal growth, driven by my passion for learning and sharing knowledge. Welcome to my blog!
+I’m Frank, a software engineer based in Melbourne, Australia. I hold a Bachelor's degree from [RMIT University](https://www.rmit.edu.au/) and currently work as a Senior Software Engineer.
+
+Here, I write about software development, productivity, and personal growth, driven by my passion for learning and sharing knowledge.
 
 Feel free to get in contact!
 """
@@ -56,6 +57,10 @@ url = "/"
 [[params.menu]]
 name = "blog"
 url = "/blog"
+
+[[params.menu]]
+name = "gear"
+url = "/gear"
 
 # Syntax highlight on code blocks
 

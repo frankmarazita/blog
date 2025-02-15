@@ -54,7 +54,7 @@ I mostly use the Self-hosted LiveSync plugin to sync my notes between all my obs
 
 Having a Git repository tracking my notes is a great backup solution. I can easily revert to a previous version of a note if I make a mistake or delete something by accident. I can also easily see the changes I've made to a note over time. I have Obsidian Git configured to commit changes to a private Git repository every 5 minutes.
 
-The other notable part of my setup is that I have a docker container running Obsidian in a VNC container. This allows me to access my notes from any device that has an internet connection via the web browser. This is useful for when I want to access my notes from a device that I don't want to copy my notes to. I can connect via Tailscale or ssh tunnel.
+The other notable part of my setup is that I have a docker container running Obsidian in a VNC container. This allows me to access my notes from any device that has an internet connection via the web browser. This is useful for when I want to access my notes from a device that I don't want to copy my notes to. I can connect via Tailscale or ssh tunnel. Enabling the `Web viewer` core plugin is quite useful for viewing webpages inside of the VNC container.
 
 ### Plugins and Customisation
 

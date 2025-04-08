@@ -60,19 +60,15 @@ The other notable part of my setup is that I have a docker container running Obs
 
 Alongside the plugins that I use for syncing and backing up my notes, there are also a variety of plugins I find useful for their quality of life improvements and workflow improvements.
 
-**AI Assistants**
-
-There are currently two AI assistant plugins that I am experimenting with:
-
-- [BMO Chatbot](https://github.com/longy2k/obsidian-bmo-chatbot)
-
-  - I use this plugin to talk to the document that is currently open. I find it useful for brainstorming and getting ideas down quickly. Sometimes I find it useful to give me more ideas on a topic that I'm writing about. I power it with a local Ollama model running on my machine.
+**AI and Language Models**
 
 - [Github Copilot](https://github.com/Pierrad/obsidian-github-copilot)
 
-  - This extension leverages the Github Copilot AI and adds autocomplete functionality to Obsidian. I find it useful for all sorts of things in my notes, not just code. I find it useful for writing out complex ideas and concepts.
+  - This extension leverages the Github Copilot AI and adds autocomplete functionality to Obsidian. I find it useful for all sorts of things in my notes, not just code. I generally find it useful for writing out complex ideas and concepts.
 
-These plugins are powered by local LLMs that I have running on my machine. I am curenlty powering them with Ollama as well as experimenting with a variety of different models. This allows me to keep my data private and not rely on a cloud service or a network connection.
+- [MCP Obsidian](https://github.com/MarkusPfundstein/mcp-obsidian)
+
+  - This is an MCP server for your obsidian notes, which allows for AI chat services such as Clauded and Github Copilot Chat to read and make changes to your notes. It leverages the `Obsidian Local Rest API` plugin for it's communication. This can be extremely powerful for automating tasks and making changes to your notes.
 
 **File Type Specific**
 
@@ -89,6 +85,10 @@ These plugins are powered by local LLMs that I have running on my machine. I am 
   - This is a plugin that I have started to build myself. It allows you to embed asciinema recordings in your notes. A frequent scenario is when I want to record the steps that I take to install a piece of software on my machine, usually when following an online tutorial. It is currently a very early work in progress.
 
 **Tools**
+
+- [Obsidan Local Rest API](https://github.com/coddingtonbear/obsidian-local-rest-api)
+
+  - This is one of my most used plugins. It allows you to run a local REST API server that can be used to interact with your notes. I use this plugin to automate tasks and make changes to my notes. It is also used by the MCP Obsidian plugin.
 
 - [Linter](https://github.com/platers/obsidian-linter)
 

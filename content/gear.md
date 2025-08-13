@@ -10,6 +10,7 @@
 - Kindle Paperwhite (7th generation)
 - Muji Gel Ink Ballpoint Pen 0.5mm
 - Amazon Basics Classic Grid Notebook
+- Tomtoc Navigator-T24 Sling Bag S
 
 ### Desk
 

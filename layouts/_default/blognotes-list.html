@@ -1,0 +1,54 @@
+{{ define "main" }}
+
+<div class="list-container">
+  {{ partial "breadcrumbs.html" . }}
+
+  <h1>{{ .Title }} {{ with .OutputFormats.Get "rss" }}<a href="{{ .Permalink }}" title="RSS Feed"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.818c-.062-8.71-7.118-15.758-15.84-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"/></svg></a>{{ end }}</h1>
+  {{ .Content }}
+
+  <div class="blognotes-list">
+    {{ range (sort .Site.Data.blognotes.links "datetime" "desc") }}
+    <div class="blognote-line">
+      {{ $parsedDate := time .datetime }}
+      <p class="line-date" data-utc="{{ .datetime }}">{{ $parsedDate.Format "2 Jan 2006 15:04" }}</p>
+
+      <div class="blognote-content">
+        <div class="blognote-header">
+          {{ $faviconUrl := .favicon }} {{ if not $faviconUrl }} {{ $parsedUrl
+          := urls.Parse .url }} {{ $faviconUrl = printf "%s://%s/favicon.ico"
+          $parsedUrl.Scheme $parsedUrl.Host }} {{ end }}
+          <img
+            src="{{ $faviconUrl }}"
+            alt="Site favicon"
+            class="blognote-favicon"
+            width="16"
+            height="16"
+            onerror="this.style.display='none'"
+          />
+          <p class="line-title">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+              {{ .title }}
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                style="margin-left: 4px; opacity: 0.6"
+              >
+                <path
+                  d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                />
+              </svg>
+            </a>
+          </p>
+        </div>
+
+        {{ if .description }}
+        <p class="line-summary">{{ .description }}</p>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

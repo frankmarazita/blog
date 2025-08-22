@@ -62,6 +62,14 @@ url = "/blog"
 name = "gear"
 url = "/gear"
 
+[[params.menu]]
+name = "blognotes"
+url = "/blognotes"
+
+[outputs]
+home = ["HTML", "RSS"]
+section = ["HTML", "RSS"]
+
 # Syntax highlight on code blocks
 
 [markup]

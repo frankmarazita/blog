@@ -59,12 +59,16 @@ name = "blog"
 url = "/blog"
 
 [[params.menu]]
-name = "gear"
-url = "/gear"
-
-[[params.menu]]
 name = "blognotes"
 url = "/blognotes"
+
+[[params.menu]]
+name = "projects"
+url = "/projects"
+
+[[params.menu]]
+name = "gear"
+url = "/gear"
 
 [outputs]
 home = ["HTML", "RSS"]
